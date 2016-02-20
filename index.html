@@ -1,12 +1,10 @@
-<<<<<<< HEAD
-<!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		
-        <title>Taschenrechner</title>
-       
-		<script type="text/javascript">
+<body>
+<!doctype html><head>
+<meta charset="utf-8">
+<title>Taschenrechner</title>
+<h6 align="center"><font size="7">TASCHENRECHNER</font></h6>
+<script type="text/javascript">
 			function plus()		{
 											var zahl_1		=	parseInt(document.getElementById("plus_zahl_1").value);
 											var zahl_2		=	parseInt(document.getElementById("plus_zahl_2").value);
@@ -60,8 +58,7 @@
 											ausgabe.innerHTML = " ";
 										}
 		</script>
-        
-        <style type="text/css">
+<style type="text/css">
 			body					{	font-family: Verdana, Geneva, sans-serif;
 										font-size: 1em;
 										color: #03f;
@@ -131,109 +128,119 @@
 												border-radius: 15px;
 											}
 									
-		</style>
-	</head>
-
-	<body>
-    	<div id="wrap">
-        	<div id="display">
-        	</div><!-- ende display -->
-            
-    		<div id="addition">
-    			<form>
-                	<fieldset>
-                    <legend>Addition</legend>
-        			<dl>
-        				<dt><label for="plus_zahl_1">Zahl 1</label></dt>
-        				<dd><input type="text" id="plus_zahl_1"></dd>
-            
-           	 			<dt><label for="plus_zahl_2">Zahl 2</label></dt>
-            			<dd><input type="text" id="plus_zahl_2"></dd>
-            
-            			<dt>&nbsp;</dt>
-                		<dd><input type="button" value="Addieren" onClick="plus();"></dd>
-            		</dl>
-                    </fieldset>
-        		</form>
-       		</div><!-- ende addition -->
-            
-            <div id="subtraktion">
-    			<form>
-                	<fieldset>
-                    <legend>Subtraktion</legend>
-        			<dl>
-        				<dt><label for="minus_zahl_1">Zahl 1</label></dt>
-        				<dd><input type="text" id="minus_zahl_1"></dd>
-            
-           	 			<dt><label for="minus_zahl_2">Zahl 2</label></dt>
-            			<dd><input type="text" id="minus_zahl_2"></dd>
-            
-            			<dt>&nbsp;</dt>
-                		<dd><input type="button" value="Subtrahieren" onClick="minus();"></dd>
-            		</dl>
-                    </fieldset>
-        		</form>
-       		</div><!-- ende subtraktion -->
-            
-            <div id="multiplikation">
-    			<form>
-                	<fieldset>
-                    <legend>Multiplikation</legend>
-        			<dl>
-        				<dt><label for="mal_zahl_1">Zahl 1</label></dt>
-        				<dd><input type="text" id="mal_zahl_1"></dd>
-            
-           	 			<dt><label for="mal_zahl_2">Zahl 2</label></dt>
-            			<dd><input type="text" id="mal_zahl_2"></dd>
-            
-            			<dt>&nbsp;</dt>
-                		<dd><input type="button" value="Multiplizieren" onClick="mal();"></dd>
-            		</dl>
-                    </fieldset>
-        		</form>
-       		</div><!-- ende multiplikation -->
-            
-            <div id="division">
-    			<form>
-                	<fieldset>
-                    <legend>Division</legend>
-        			<dl>
-        				<dt><label for="geteilt_zahl_1">Zahl 1</label></dt>
-        				<dd><input type="text" id="geteilt_zahl_1"></dd>
-            
-           	 			<dt><label for="geteilt_zahl_2">Zahl 2</label></dt>
-            			<dd><input type="text" id="geteilt_zahl_2"></dd>
-            
-            			<dt>&nbsp;</dt>
-                		<dd><input type="button" value="Dividieren" onClick="geteilt();"></dd>
-            		</dl>
-                    </fieldset>
-        		</form>
-       		</div><!-- ende division -->
-            
-            <div id="potenz">
-    			<form>
-                	<fieldset>
-                    <legend>Quadratzahl</legend>
-        			<dl>
-        				<dt><label for="quadratzahl">Zahl</label></dt>
-        				<dd><input type="text" id="quadratzahl"></dd>
-            
-            			<dt>&nbsp;</dt>
-                		<dd><input type="button" value="Quadrieren" onClick="quadrat();"></dd>
-            		</dl>
-                    </fieldset>
-        		</form>
-       		</div><!-- ende potenz -->
-            
-            <div id="loeschen">
-            	<form>
-                	<input type="button" value="Felder löschen" id="loeschen_knopf" onClick="loeschen();">
-                </form>
-            </div><!-- ende loeschen -->
-       </div><!-- ende wrap -->
-	</body>
+		</style></head>
+<div id="wrap"> 
+  <div id="display"> </div>
+  <!-- ende display -->
+  <div id="addition"> 
+    <div align="center"></div>
+    <form>
+      <fieldset> <legend>Addition</legend> 
+      <dl> 
+        <dt><label for="plus_zahl_1">Zahl 1</label></dt>
+        <dd> 
+          <input type="text" id="plus_zahl_1">
+        </dd>
+        <dt><label for="plus_zahl_2">Zahl 2</label></dt>
+        <dd> 
+          <input type="text" id="plus_zahl_2">
+        </dd>
+        <dt>&nbsp;</dt>
+        <dd> 
+          <input type="button" value="Addieren" onClick="plus();">
+        </dd>
+      </dl>
+      </fieldset> 
+    </form>
+  </div>
+  <!-- ende addition -->
+  <div id="subtraktion"> 
+    <form>
+      <fieldset> <legend>Subtraktion</legend> 
+      <dl> 
+        <dt><label for="minus_zahl_1">Zahl 1</label></dt>
+        <dd> 
+          <input type="text" id="minus_zahl_1">
+        </dd>
+        <dt><label for="minus_zahl_2">Zahl 2</label></dt>
+        <dd> 
+          <input type="text" id="minus_zahl_2">
+        </dd>
+        <dt>&nbsp;</dt>
+        <dd> 
+          <input type="button" value="Subtrahieren" onClick="minus();">
+        </dd>
+      </dl>
+      </fieldset> 
+    </form>
+  </div>
+  <!-- ende subtraktion -->
+  <div id="multiplikation"> 
+    <form>
+      <fieldset> <legend>Multiplikation</legend> 
+      <dl> 
+        <dt><label for="mal_zahl_1">Zahl 1</label></dt>
+        <dd> 
+          <input type="text" id="mal_zahl_1">
+        </dd>
+        <dt><label for="mal_zahl_2">Zahl 2</label></dt>
+        <dd> 
+          <input type="text" id="mal_zahl_2">
+        </dd>
+        <dt>&nbsp;</dt>
+        <dd> 
+          <input type="button" value="Multiplizieren" onClick="mal();">
+        </dd>
+      </dl>
+      </fieldset> 
+    </form>
+  </div>
+  <!-- ende multiplikation -->
+  <div id="division"> 
+    <form>
+      <fieldset> <legend>Division</legend> 
+      <dl> 
+        <dt><label for="geteilt_zahl_1">Zahl 1</label></dt>
+        <dd> 
+          <input type="text" id="geteilt_zahl_1">
+        </dd>
+        <dt><label for="geteilt_zahl_2">Zahl 2</label></dt>
+        <dd> 
+          <input type="text" id="geteilt_zahl_2">
+        </dd>
+        <dt>&nbsp;</dt>
+        <dd> 
+          <input type="button" value="Dividieren" onClick="geteilt();">
+        </dd>
+      </dl>
+      </fieldset> 
+    </form>
+  </div>
+  <!-- ende division -->
+  <div id="potenz"> 
+    <form>
+      <fieldset> <legend>Quadratzahl</legend> 
+      <dl> 
+        <dt><label for="quadratzahl">Zahl</label></dt>
+        <dd> 
+          <input type="text" id="quadratzahl">
+        </dd>
+        <dt>&nbsp;</dt>
+        <dd> 
+          <input type="button" value="Quadrieren" onClick="quadrat();">
+        </dd>
+      </dl>
+      </fieldset> 
+    </form>
+  </div>
+  <!-- ende potenz -->
+  <div id="loeschen"> 
+    <form>
+      <input type="button" value="Felder löschen" id="loeschen_knopf" onClick="loeschen();">
+    </form>
+  </div>
+  <!-- ende loeschen -->
+</div>
+<!-- ende wrap -->
+</body>
 </html>
-=======
-Die erste Tour
->>>>>>> origin/master
