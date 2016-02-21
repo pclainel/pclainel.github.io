@@ -1,0 +1,248 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Taschenrechner</title>
+<div align="center">
+  <p><font size="8">TASCHENRECHNER</font> </head> <body> 
+    <script type="text/javascript">
+			function plus()		{
+											var zahl_1		=	parseInt(document.getElementById("plus_zahl_1").value);
+											var zahl_2		=	parseInt(document.getElementById("plus_zahl_2").value);
+											var ergebnis	=	zahl_1 + zahl_2;
+											var ausgabe	=  document.getElementById("display"); 	
+											ausgabe	.innerHTML +=	"Das Ergebnis lautet: " + ergebnis;
+										}
+										
+			function minus()	{
+											var zahl_1		=	parseInt(document.getElementById("minus_zahl_1").value);
+											var zahl_2		=	parseInt(document.getElementById("minus_zahl_2").value);
+											var ergebnis	=	zahl_1 - zahl_2;
+											var ausgabe	=  document.getElementById("display"); 	
+											ausgabe	.innerHTML +=	"Das Ergebnis lautet: " + ergebnis;
+										}
+										
+			function mal()		{
+											var zahl_1		=	parseInt(document.getElementById("mal_zahl_1").value);
+											var zahl_2		=	parseInt(document.getElementById("mal_zahl_2").value);
+											var ergebnis	=	zahl_1 * zahl_2;
+											var ausgabe	=  document.getElementById("display"); 	
+											ausgabe	.innerHTML +=	"Das Ergebnis lautet: " + ergebnis;
+										}
+										
+			function geteilt()	{
+											var zahl_1		=	parseInt(document.getElementById("geteilt_zahl_1").value);
+											var zahl_2		=	parseInt(document.getElementById("geteilt_zahl_2").value);
+											var ergebnis	=	zahl_1 / zahl_2;
+											var ausgabe	=  document.getElementById("display"); 	
+											ausgabe	.innerHTML +=	"Das Ergebnis lautet: " + ergebnis;
+										}
+										
+			function quadrat()	{
+											var zahl			=	parseInt(document.getElementById("quadratzahl").value);
+											var ergebnis	=	zahl * zahl;
+											var ausgabe	=  document.getElementById("display"); 	
+											ausgabe	.innerHTML +=	"Das Ergebnis lautet: " + ergebnis;
+										}
+										
+			function loeschen()	{
+											document.getElementById("plus_zahl_1").value = " ";
+											document.getElementById("plus_zahl_2").value = " ";
+											document.getElementById("minus_zahl_1").value = " ";
+											document.getElementById("minus_zahl_2").value = " ";
+											document.getElementById("mal_zahl_1").value = " ";
+											document.getElementById("mal_zahl_2").value = " ";
+											document.getElementById("geteilt_zahl_1").value = " ";
+											document.getElementById("geteilt_zahl_2").value = " ";
+											document.getElementById("quadratzahl").value = " ";
+											var ausgabe = document.getElementById("display");
+											ausgabe.innerHTML = " ";
+										}
+		</script>
+    <style type="text/css">
+			body					{	font-family: Verdana, Geneva, sans-serif;
+										font-size: 1em;
+										color: #03f;
+									}
+									
+			div#wrap			{	width: 920px;
+										height: 760px;
+										border: 1px solid #03f;
+										margin: auto;
+									}
+									
+			div#display			{	width: 878px;
+										height: 78px;
+										border: 1px solid #03f;
+										margin: 20px;
+										background-color: #fff;
+										text-align: center;
+										vertical-align: middle;
+										font-size: 3em;
+									}
+									
+			div#addition,
+			div#subtraktion,
+			div#multiplikation,
+			div#division,
+			div#potenz,
+			div#loeschen
+									{	width: 418px;
+										height: 138px;
+										padding-top: 20px;
+										border: 1px solid #03f;
+										margin: 20px;
+										background-color: #fff;
+										float: left;
+									}
+									
+			div#loeschen		{	border: 1px solid #fff;
+									}
+									
+			fieldset				{	border: none;
+									}
+									
+			legend				{	font-weight: bold;
+										text-decoration: underline;
+									}
+									
+			dd, dt				{	float: left;
+										width: 140px;
+									}
+									
+			input[type="text"]		{	width: 50px;
+												border: 1px solid #03f;
+											}
+									
+			input[type="button"]	{	font-size: 1.2em;
+												color: #fff;
+												background-color: #03f;
+												border: 1px solid #fff;
+												margin-top: 10px;
+												cursor: pointer;
+											}
+											
+			input#loeschen_knopf	{	margin-top: 60px;	
+												margin-left: 120px;
+												width: 200px;
+												height: 30px;
+												border-radius: 15px;
+											}
+									
+		</style>
+  </p>
+</div>
+<div id="wrap"> 
+  <div id="display"> </div>
+  <!-- ende display -->
+  <div id="addition"> 
+    <form>
+      <fieldset> <legend>Addition</legend> 
+      <dl> 
+        <dt><label for="plus_zahl_1">Zahl 1</label></dt>
+        <dd>
+          <input type="text" id="plus_zahl_1">
+        </dd>
+        <dt><label for="plus_zahl_2">Zahl 2</label></dt>
+        <dd>
+          <input type="text" id="plus_zahl_2">
+        </dd>
+        <dt>&nbsp;</dt>
+        <dd>
+          <input type="button" value="Addieren" onClick="plus();">
+        </dd>
+      </dl>
+      </fieldset> 
+    </form>
+  </div>
+  <!-- ende addition -->
+  <div id="subtraktion"> 
+    <form>
+      <fieldset> <legend>Subtraktion</legend> 
+      <dl> 
+        <dt><label for="minus_zahl_1">Zahl 1</label></dt>
+        <dd>
+          <input type="text" id="minus_zahl_1">
+        </dd>
+        <dt><label for="minus_zahl_2">Zahl 2</label></dt>
+        <dd>
+          <input type="text" id="minus_zahl_2">
+        </dd>
+        <dt>&nbsp;</dt>
+        <dd>
+          <input type="button" value="Subtrahieren" onClick="minus();">
+        </dd>
+      </dl>
+      </fieldset> 
+    </form>
+  </div>
+  <!-- ende subtraktion -->
+  <div id="multiplikation"> 
+    <form>
+      <fieldset> <legend>Multiplikation</legend> 
+      <dl> 
+        <dt><label for="mal_zahl_1">Zahl 1</label></dt>
+        <dd>
+          <input type="text" id="mal_zahl_1">
+        </dd>
+        <dt><label for="mal_zahl_2">Zahl 2</label></dt>
+        <dd>
+          <input type="text" id="mal_zahl_2">
+        </dd>
+        <dt>&nbsp;</dt>
+        <dd>
+          <input type="button" value="Multiplizieren" onClick="mal();">
+        </dd>
+      </dl>
+      </fieldset> 
+    </form>
+  </div>
+  <!-- ende multiplikation -->
+  <div id="division"> 
+    <form>
+      <fieldset> <legend>Division</legend> 
+      <dl> 
+        <dt><label for="geteilt_zahl_1">Zahl 1</label></dt>
+        <dd>
+          <input type="text" id="geteilt_zahl_1">
+        </dd>
+        <dt><label for="geteilt_zahl_2">Zahl 2</label></dt>
+        <dd>
+          <input type="text" id="geteilt_zahl_2">
+        </dd>
+        <dt>&nbsp;</dt>
+        <dd>
+          <input type="button" value="Dividieren" onClick="geteilt();">
+        </dd>
+      </dl>
+      </fieldset> 
+    </form>
+  </div>
+  <!-- ende division -->
+  <div id="potenz"> 
+    <form>
+      <fieldset> <legend>Quadratzahl</legend> 
+      <dl> 
+        <dt><label for="quadratzahl">Zahl</label></dt>
+        <dd>
+          <input type="text" id="quadratzahl">
+        </dd>
+        <dt>&nbsp;</dt>
+        <dd>
+          <input type="button" value="Quadrieren" onClick="quadrat();">
+        </dd>
+      </dl>
+      </fieldset> 
+    </form>
+  </div>
+  <!-- ende potenz -->
+  <div id="loeschen"> 
+    <form>
+      <input type="button" value="Felder löschen" id="loeschen_knopf" onClick="loeschen();">
+    </form>
+  </div>
+  <!-- ende loeschen -->
+</div>
+<!-- ende wrap -->
+</body>
+</html>
